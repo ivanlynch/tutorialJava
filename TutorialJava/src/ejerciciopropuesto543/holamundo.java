@@ -1,4 +1,4 @@
-package ejerciciopropuesto541;
+package ejerciciopropuesto543;
 
 import java.util.Scanner;
 
@@ -16,8 +16,14 @@ class holamundo {
 		System.out.print("Introduzca otro: ");
 		segundoNumero = teclado.nextInt();
 		
-		if((primerNumero >= 0) || (segundoNumero >= 0)){
-			System.out.print("Uno de los 2 es positivo");
+		if((primerNumero % 2 == 0) && (segundoNumero % 2 == 0)){
+			System.out.print("Los dos son pares");
+		}else{
+			if((primerNumero % 2 == 0) || (segundoNumero % 2 == 0)){
+				System.out.print("Alguno es par");
+			}else{
+				System.out.print("Ninguno de ellos es par");
+			}
 		}
 		
 
