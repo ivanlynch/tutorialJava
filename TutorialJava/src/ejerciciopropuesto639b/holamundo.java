@@ -11,11 +11,15 @@ class holamundo {
 
 		System.out.println("Ingrese un numero :");
 		double Usuario = Teclado.nextByte();
+		
+		System.out.println("Ingrese otro numero :");
+		double Usuario2 = Teclado.nextByte();
+		
 		int Cont = 0;
 		
-		for(int i = 0; i < Usuario; i++){
+		for(double i = Usuario; i < Usuario2; i++){
 			
-			if((Usuario % 1 == 0) && (Usuario % Usuario == 0)){
+			if(((Usuario % 1 == 0) && (Usuario % Usuario == 0) && (Usuario2 % 1 == 0) && (Usuario2 % Usuario2 == 0))){
 				Cont++;
 			}
 		}
